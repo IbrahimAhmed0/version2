@@ -1,0 +1,14 @@
+$(function(){
+  $(".conter").counterUp({
+    delay:10,
+    time:2000
+  });
+  setTimeout(function(){
+    $(".loader_bg").fadeToggle()
+  },1500);
+  $(".form-control").focus(function(){
+    $(this).animate({
+      "width":"300px"
+    },1000);
+  });
+  });
